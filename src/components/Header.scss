@@ -1,0 +1,161 @@
+// @import 'compass/css3';
+
+// $space-small: 0.5em;
+// $space-middle: $space-small * 2;
+// $space-big: $space-small * 3;
+
+// $time-avatar: 0.15s;
+
+// $color-blue-700: #455ede;
+// $color-blue-500: #5677fc;
+// $color-blue-300: #91a7ff;
+// $color-blue-100: #d0d9ff;
+
+// $color-red-500: #e51c23;
+// $color-red-300: #f36c60;
+
+// $color-pink-500: #e91e63;
+// $color-pink-300: #f06292;
+// $color-pink-100: #f8bbd0;
+
+// $color-green-500: #259b24;
+// $color-green-300: #42bd41;
+// $color-green-100: #a3e9a4;
+
+// $color-white: #fff;
+
+// $list-alpha: $color-blue-300 $color-blue-500 $color-green-300 $color-green-500
+//   $color-red-300 $color-red-500 $color-pink-300 $color-pink-500;
+
+// $unit-alpha: length($list-alpha);
+// $unit-beta: 0.25s;
+// $unit-gamma: 100% / ($unit-alpha);
+
+// body {
+//   font: 1em 'Ubuntu', sans-serif;
+//   text-align: center;
+//   margin: 0;
+// }
+
+// .fold {
+//   min-height: 100vh;
+// }
+
+// h1 {
+//   margin: $space-small 0 0 0;
+//   text-transform: uppercase;
+// }
+
+// h3 {
+//   font-size: 2.5em;
+//   text-transform: uppercase;
+//   margin: $space-big * 2 0;
+
+//   span {
+//     @for $i from 0 through $unit-alpha {
+//       &:nth-child(#{$unit-alpha}n + #{$i}) {
+//         @include animation(
+//           candy linear $unit-beta infinite forwards
+//             (-$unit-beta / $unit-alpha * $i)
+//         );
+//       }
+//     }
+//   }
+// }
+
+// @include keyframes(candy) {
+//   @for $i from 1 through ($unit-alpha + 1) {
+//     #{$unit-gamma * ($i - 1)} {
+//       color: darken(nth($list-alpha, ($i % $unit-alpha) + 1), 15%);
+//     }
+//   }
+// }
+
+// %avatar {
+//   .avatar__picture {
+//     border-radius: 50%;
+//     @include transition(
+//       $time-avatar transform ease-in-out,
+//       $time-avatar box-shadow ease-in-out
+//     );
+//   }
+// }
+
+// .avatar__main {
+//   @extend %avatar;
+
+//   a {
+//     &:hover {
+//       .avatar__picture {
+//         box-shadow: 0 0 0 $space-small $color-pink-500, 0 0 5em $color-pink-500;
+
+//         @include transform(scale(1.15));
+//       }
+//     }
+//   }
+// }
+
+// .avatar__sub {
+//   @extend %avatar;
+
+//   a {
+//     &:hover {
+//       .avatar__picture {
+//         box-shadow: 0 0 0 $space-small $color-green-500,
+//           0 0 5em $color-green-500;
+
+//         @include transform(scale(1.15));
+//       }
+//     }
+//   }
+// }
+
+// .birthdaychild {
+//   background: $color-pink-100;
+//   padding: $space-middle 0 $space-big 0;
+//   margin: 0;
+
+//   h1 {
+//     color: $color-white;
+//   }
+
+//   h2 {
+//     font-size: 4.5em;
+//     margin: 0 0 $space-small / 2 0;
+//     color: $color-pink-500;
+//   }
+
+//   .avatar__picture {
+//     box-shadow: 0 0 0 $space-small $color-pink-100, 0 0 50em $color-pink-500;
+//     margin: 0 0 $space-middle 0;
+//   }
+// }
+
+// .present {
+//   font-size: 1.25em;
+//   background: $color-green-300;
+//   padding: $space-big 0;
+//   margin: 0;
+
+//   .present__description {
+//     margin: $space-middle 0;
+//     font-size: 1.25em;
+//     font-weight: bold;
+//     color: $color-white;
+//   }
+
+//   .avatar__picture {
+//     margin: $space-small 0;
+
+//     box-shadow: 0 0 0 $space-small $color-green-100, 0 0 7.5em $color-blue-500;
+//   }
+
+//   .present__spend {
+//     margin: $space-middle 0;
+//     color: $color-white;
+//   }
+// }
+
+// .spend {
+//   margin: $space-middle 0;
+// }

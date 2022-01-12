@@ -1,0 +1,57 @@
+body {
+  //   background-color: #3d3d3d;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   height: 100vh;
+  margin-bottom: 100px;
+}
+
+.card {
+  margin: auto;
+  margin-top: 100px;
+  position: relative;
+  width: 530px;
+  height: 266px;
+  background-color: #dbcfb4;
+  clip-path: polygon(0% 0%, 90% 0%, 100% 20%, 100% 80%, 90% 100%, 0% 100%);
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 14px;
+    width: 20px;
+    height: 20px;
+    margin: -20px auto;
+    border-radius: 50%;
+    background-color: #3d3d3d;
+    border: 10px solid green;
+  }
+
+  &__wrapper {
+    width: calc(100% - 100px);
+    height: calc(100% - 60px);
+    overflow: auto;
+    position: relative;
+    top: 30px;
+    left: 30px;
+  }
+
+  &__message {
+    min-height: 100%;
+    background-color: transparent;
+    border: none;
+    font-family: 'Indie Flower', cursive;
+    font-size: 20px;
+    font-weight: 700;
+    color: #3d3d3d;
+    outline: 1px solid black;
+    line-height: 32px;
+    vertical-align: bottom;
+    background-size: 1px 32px;
+    background-repeat: repeat;
+    background-position: 0px 10px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1em'%3E%3Crect id='background' height='3em' width='1' y='0' x='0' fill='none'/%3E %3Cline id='underline' y2='1em' x2='0' y1='1em' x1='1' stroke='%23008000' fill='none'/%3E %3C/svg%3E");
+  }
+}

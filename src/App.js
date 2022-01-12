@@ -26,9 +26,9 @@ const App = () => {
       <div className="main">
         <div ref={canvasRef} />
       </div>
-      <Cake />
+//       <Cake />
       <Header />
-      <Gifts />
+//       <Gifts />
     </>
   );
 };
